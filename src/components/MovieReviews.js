@@ -5,7 +5,7 @@ function MovieReviews(props) {
         return (
             <div key={index} className="review">
                 <h1>{review.display_title}</h1>
-                <p><em>{review.byline}</em></p>
+                <p>{review.byline}</p>
                 <h3>{review.headline}</h3>
                 <a href="{review.link.url}">{review.link.suggested_link_text}</a>
             </div>
