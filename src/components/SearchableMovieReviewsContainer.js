@@ -36,9 +36,6 @@ export default class SearchableMovieReviewsContainer extends Component {
         })
     }
 
-    
-
-    
     render(){
         return(
             <div className="searchable-movie-reviews" onClick={this.handleClick}>
