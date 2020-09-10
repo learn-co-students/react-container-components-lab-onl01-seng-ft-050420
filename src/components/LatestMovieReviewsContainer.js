@@ -20,6 +20,7 @@ export default class LatestMovieReviewsContainer extends Component {
             this.setState({
                 reviews: json.results.summary_short
             })
+            return this.state
         })
     }
 
