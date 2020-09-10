@@ -4,10 +4,10 @@ import React, {Component} from 'react'
 const MovieReviews = (props) =>
     
        <div className="review-list">
-           {/* { props.reviews.map(review => {
+           { props.reviews.map(review => {
                <div className="review">
                 {review}
-           </div>})} */}
+           </div>})}
         </div>
     
 
