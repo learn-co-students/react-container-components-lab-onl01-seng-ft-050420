@@ -13,14 +13,15 @@ export default class LatestMovieReviewsContainer extends Component {
         this.state = { reviews: []}
     }
 
-    fetchReviews=()=>{
-        fetch("https://api.nytimes.com/svc/movies/v2/reviews/all.json")
+    componentDidMount=()=>{
+        fetch(URL)
         .then(resp => resp.json())
         .then(json =>{
+            //console.log(json)
             this.setState({
-                reviews: json.results.summary_short
+                reviews: json.results
             })
-            return this.state
+           
         })
     }
 
