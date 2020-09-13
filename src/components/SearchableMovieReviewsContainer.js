@@ -26,6 +26,7 @@ class SearchableMovieReviewsContainer extends Component {
       render(){
         return (
         <div className = "searchable-movie-reviews">
+        {/* <input {this.state.searchTerm}></input> */}
         <MovieReviews reviews={this.state.reviews} />
         </div>
         )}
